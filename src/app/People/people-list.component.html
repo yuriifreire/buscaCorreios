@@ -1,0 +1,21 @@
+<h2>Pessoas</h2>
+<table class="table">
+  <thead class="table__head">
+    <tr>
+      <th>#</th>
+      <th>Nome</th>
+      <th>Sexo</th>
+      <th>Ano de nascimento</th>
+      <th>Cor do Cabelo</th>
+    </tr>
+  </thead>
+  <tbody class="table__body">
+    <tr *ngFor="let person of people; let i = index; trackBy:trackByName;">
+      <td>{{ i+1 }}</td>   <!--- Auto incremento do valor a se buscar na API -->
+      <td>{{ person.name }}</td>
+      <td>{{ person.gender }}</td>
+      <td>{{ person.birth_year }}</td>
+      <td>{{ person.hair_color }}</td>
+    </tr>
+  </tbody>
+</table>
