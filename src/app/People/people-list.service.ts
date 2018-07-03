@@ -18,7 +18,7 @@ export class PeopleService {
   ) {}
 
   // varivel publica
-  public PAGESIZE: number = 10;
+  public PAGESIZE: number = 12;
   public totalPage: number = 0;
   public count: number = 0;
   public currentPage: number = 1;

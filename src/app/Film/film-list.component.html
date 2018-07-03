@@ -6,15 +6,16 @@
       <th>Titulo</th>
       <th>Episódio</th>
       <th>Lançamento</th>
+      <th>Diretor</th>
     </tr>
   </thead>
   <tbody class="table__body">
     <tr *ngFor="let film of films; let i = index; trackBy:trackByEpisodId;">
-      <td>{{ i+1 }}</td> <!--- Auto incremento do valor a se buscar na API,
-                                nesse caso, o número 1 da API, equivale ao filme 4, ordem definida pela propria API -->
+      <td>{{ i+1 }}</td>
       <td>{{ film.title | filmTitle }}</td>
       <td>{{ film.episode_id }}</td>
       <td>{{ film.release_date }}</td>
+      <td>{{ film.director }}</td>
     </tr>
   </tbody>
 </table>

@@ -10,6 +10,6 @@ export class HeaderComponent {
     userName: string;
 
     constructor() {
-      this.headerTitle = 'API de Consumo do SWAPI - v0.01a';
+      this.headerTitle = 'API de Consumo a SWAPI v0.0.1a';
     }
 }
